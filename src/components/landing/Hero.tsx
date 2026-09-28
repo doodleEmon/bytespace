@@ -17,7 +17,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="flex min-h-[calc(100vh-70px)] lg:min-h-[calc(100vh-140px)] items-center justify-center">
+    <section className="flex min-h-[calc(100vh-70px)] lg:min-h-[calc(100vh-140px)] items-start lg:items-center justify-center">
       <div className="mx-auto flex w-full max-w-225 flex-col items-center text-center gap-y-5 p-4 sm:p-0">
         {/* Main Heading */}
         <h1
