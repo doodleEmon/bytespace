@@ -15,8 +15,8 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative w-full pt-2">
-      <nav className="flex h-20 items-center justify-between">
+    <header className="relative w-full lg:pt-2">
+      <nav className="flex h-18 lg:h-20 items-center justify-between">
         {/* Left — Logo + Name */}
         <Link
           href="/"
@@ -24,28 +24,28 @@ export default function Navbar() {
           onClick={() => setIsMenuOpen(false)}
         >
           <Image
-            src="/images/vector.png"
+            src="/images/vector.svg"
             alt="ByteSpace logo"
             width={31}
             height={31}
             priority
-            className="size-7.75"
+            className="size-6 lg:size-7"
           />
 
           <span
-            className={`h-7 text-xl font-bold text-white sm:text-2xl ${clashDisplay.className}`}
+            className={`h-7 text-base font-bold text-white md:text-xl ${clashDisplay.className} -mb-2 md:-mb-1`}
           >
             ByteSpace
           </span>
         </Link>
 
         {/* Middle — Desktop Navigation */}
-        <div className="hidden items-center gap-8 md:flex lg:gap-10">
+        <div className="hidden items-center gap-8 md:flex lg:gap-8 mt-2">
           {navItems.map((item) => (
             <Link
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-white transition-transform duration-200 hover:scale-[1.02] sm:text-base"
+              className="text-sm text-gray-300 hover:text-white transition-transform duration-200"
             >
               {item.label}
             </Link>
@@ -53,17 +53,17 @@ export default function Navbar() {
         </div>
 
         {/* Right — Desktop Actions */}
-        <div className="hidden items-center gap-2 sm:gap-3 md:flex">
+        <div className="hidden items-center gap-2 sm:gap-3 md:flex lg:gap-2 mt-2">
           <Link
             href="/sign-in"
-            className="px-3 py-2 text-sm font-normal text-white transition-transform duration-200 hover:scale-[1.02] sm:px-4 sm:text-base"
+            className="px-3 py-2 sm:px-4 text-sm text-gray-300 hover:text-white transition-transform duration-200"
           >
             Sign In
           </Link>
 
           <Link
             href="/join-us"
-            className="px-3 py-2 text-sm font-normal text-white transition-transform duration-200 hover:scale-[1.02] sm:px-4 sm:text-base"
+            className="px-3 py-2 sm:px-4 text-sm font-normal text-gray-300 hover:text-white transition-transform duration-200"
           >
             Join Us
           </Link>
@@ -127,15 +127,15 @@ export default function Navbar() {
             : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
-        <div className="border border-white/20 bg-persian-blue-800/95 px-5 py-5 backdrop-blur-md sm:px-8">
+        <div className="border border-white/20 bg-persian-blue-800/95 p-3 backdrop-blur-md sm:px-8">
           {/* Navigation Links */}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-0">
             {navItems.map((item) => (
               <Link
                 key={item.label}
                 href={item.href}
                 onClick={() => setIsMenuOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-white transition-colors hover:bg-white/10"
+                className="rounded-lg px-3 py-2 text-sm font-normal text-white transition-colors hover:bg-white/10"
               >
                 {item.label}
               </Link>
@@ -147,7 +147,7 @@ export default function Navbar() {
             <Link
               href="/sign-in"
               onClick={() => setIsMenuOpen(false)}
-              className="text-white text-center text-sm font-medium"
+              className="text-white text-center text-sm font-normal"
             >
               Sign In
             </Link>
@@ -155,7 +155,7 @@ export default function Navbar() {
             <Link
               href="/join-us"
               onClick={() => setIsMenuOpen(false)}
-              className="text-white text-center text-sm font-medium"
+              className="text-white text-center text-sm font-normal"
             >
               Join Us
             </Link>

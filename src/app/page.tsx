@@ -1,3 +1,4 @@
+import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/shared/Navbar";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
         min-h-screen
         bg-persian-blue-800
         bg-[linear-gradient(to_right,rgba(255,255,255,0.12)_2px,transparent_2px),linear-gradient(to_bottom,rgba(255,255,255,0.12)_2px,transparent_2px)]
-        bg-size-[120px_120px]
+        bg-size-[110px_110px]
       "
     >
       <div className="mx-auto w-full max-w-350 px-0 sm:px-8 lg:px-12">
@@ -19,7 +20,7 @@ export default function Home() {
         {/* Hero */}
         <section>
           <div className="mx-auto w-full max-w-350 px-0 sm:px-8 lg:px-12">
-            Hero portion
+            <Hero />
           </div>
         </section>
       </div>
