@@ -15,7 +15,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="relative w-full">
+    <header className="relative w-full pt-2">
       <nav className="flex h-20 items-center justify-between">
         {/* Left — Logo + Name */}
         <Link
@@ -127,7 +127,7 @@ export default function Navbar() {
             : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
-        <div className="border-t border-white/20 bg-persian-blue-800/95 px-5 py-5 backdrop-blur-md sm:px-8">
+        <div className="border border-white/20 bg-persian-blue-800/95 px-5 py-5 backdrop-blur-md sm:px-8">
           {/* Navigation Links */}
           <div className="flex flex-col gap-1">
             {navItems.map((item) => (
@@ -143,11 +143,11 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Actions */}
-          <div className="mt-4 flex items-center gap-3 border-t border-white/20 pt-4">
+          <div className="mt-4 flex items-center justify-between border-t border-white/20 pt-4 px-4">
             <Link
               href="/sign-in"
               onClick={() => setIsMenuOpen(false)}
-              className="flex-1 rounded-lg px-4 py-3 text-center text-sm font-medium text-white transition-colors hover:bg-white/10"
+              className="text-white text-center text-sm font-medium"
             >
               Sign In
             </Link>
@@ -155,7 +155,7 @@ export default function Navbar() {
             <Link
               href="/join-us"
               onClick={() => setIsMenuOpen(false)}
-              className="flex-1 rounded-lg bg-white px-4 py-3 text-center text-sm font-medium text-persian-blue-800 transition-colors hover:bg-white/90"
+              className="text-white text-center text-sm font-medium"
             >
               Join Us
             </Link>
@@ -163,7 +163,7 @@ export default function Navbar() {
             <button
               type="button"
               aria-label="Shopping bag"
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-white/20 transition-colors hover:bg-white/10"
+              className="items-center justify-center"
             >
               <Image
                 src="/images/shopping-bag.png"
