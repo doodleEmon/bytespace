@@ -127,7 +127,7 @@ export default function Navbar() {
             : "pointer-events-none max-h-0 opacity-0"
         }`}
       >
-        <div className="border border-white/20 bg-persian-blue-800/95 p-3 backdrop-blur-md sm:px-8">
+        <div className="border border-[#D4FB20] bg-persian-blue-800/95 p-3 backdrop-blur-md sm:px-8 rounded-xl">
           {/* Navigation Links */}
           <div className="flex flex-col gap-0">
             {navItems.map((item) => (
