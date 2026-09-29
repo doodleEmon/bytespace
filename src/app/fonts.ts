@@ -12,3 +12,15 @@ export const clashDisplay = localFont({
   display: 'swap',
   variable: '--font-clash-display', // Optional: for use with Tailwind or CSS vars
 })
+
+export const clashDisplayRegular = localFont({
+  src: [
+    {
+      path: './fonts/ClashDisplay-Regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+  ],
+  display: 'swap',
+  variable: '--font-clash-display', // Optional: for use with Tailwind or CSS vars
+})
