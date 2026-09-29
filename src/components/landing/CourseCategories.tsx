@@ -29,7 +29,7 @@ const categories = [
 
 export default function CourseCategories() {
     return (
-        <section className="bg-white pb-20 sm:pb-24 lg:pb-12">
+        <section className="bg-white pb-16 sm:pb-18 lg:pb-24">
             <div className="mx-auto w-full max-w-280 px-5 sm:px-8 lg:px-12">
                 {/* Section Header */}
                 <div className="mx-auto max-w-270 text-center">
