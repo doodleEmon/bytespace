@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="mx-auto flex w-full flex-col items-center text-center gap-y-5 p-4 sm:p-0">
         {/* Main Heading */}
         <h1
-          className={`mt-16 max-w-220 text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]`}
+          className={`mt-8 lg:mt-16 max-w-220 text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]`}
         >
           Get Access to Hundreds Courses Available
         </h1>
