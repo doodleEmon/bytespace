@@ -75,9 +75,31 @@ export default function Hero() {
           <Image
             src="/images/man.svg"
             alt="Man"
-            width={1000}
-            height={1000}
-            className="w-full max-w-160 max-h-100 lg:max-h-130 object-contain absolute bottom-0 left-1/2 -translate-x-1/2 ml-10" />
+            width={630}
+            height={590}
+            className="w-full max-w-157.5 max-h-147.5 object-contain absolute bottom-0 left-1/2 -translate-x-1/2 ml-10"
+          />
+          <Image
+            src="/images/uiux.svg"
+            alt="UI/UX Designer"
+            width={200}
+            height={70}
+            className="w-full max-w-52 max-h-17.5 lg:max-h-130 object-contain absolute left-[19.5%] top-[10%]"
+          />
+          <Image
+            src="/images/happyStudents.svg"
+            alt="Happy Students"
+            width={258}
+            height={121}
+            className="w-full max-w-64.5 max-h-25 lg:max-h-130 object-contain absolute left-[12%] bottom-[14%]"
+          />
+          <Image
+            src="/images/learningProgress.svg"
+            alt="Learning Progress"
+            width={208}
+            height={70}
+            className="w-full max-w-52 max-h-17.5 lg:max-h-130 object-contain absolute right-[20%] top-[12%]"
+          />
         </div>
       </div>
     </section>
