@@ -1,4 +1,5 @@
 import CompanyLogos from "@/components/landing/CompanyLogos";
+import CourseSection from "@/components/landing/CourseSection";
 import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
@@ -33,7 +34,11 @@ export default function Home() {
           />
         </section>
 
+        {/* Companies */}
         <CompanyLogos />
+
+        {/* Courses */}
+        <CourseSection />
       </div>
     </main>
   );
