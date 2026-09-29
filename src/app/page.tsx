@@ -2,6 +2,7 @@ import CompanyLogos from "@/components/landing/CompanyLogos";
 import CourseCategories from "@/components/landing/CourseCategories";
 import CourseSection from "@/components/landing/CourseSection";
 import Hero from "@/components/landing/Hero";
+import ProfessionalGrowth from "@/components/landing/ProfessionalGrowth";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
 
@@ -43,6 +44,9 @@ export default function Home() {
 
         {/* Course Categories */}
         <CourseCategories />
+
+        {/* Professional Growth */}
+        <ProfessionalGrowth />
       </div>
     </main>
   );
