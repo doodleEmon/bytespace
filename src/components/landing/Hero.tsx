@@ -1,7 +1,7 @@
 "use client";
 
-import { Search } from "lucide-react";
-import {  useState } from "react";
+import Image from "next/image";
+import { useState } from "react";
 
 export default function Hero() {
   const [search, setSearch] = useState("");
@@ -27,35 +27,39 @@ export default function Hero() {
         </h1>
 
         {/* Description */}
-        <p className="mt-6 max-w-210 text-sm leading-6 text-white/75 sm:text-sm sm:leading-7 lg:text-lg">
+        <p className="mt-2 max-w-210 text-sm leading-6 text-white/75 sm:text-sm sm:leading-7 lg:text-sm">
           Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
         </p>
 
         {/* Search */}
         <form
           onSubmit={handleSearch}
-          className="mt-8 flex w-full max-w-162.5 flex-col gap-3 sm:flex-row"
+          className="mt-8 flex w-full items-center justify-center gap-2"
         >
-          <div className="relative flex-1">
-            <Search
-              size={20}
-              strokeWidth={1.8}
-              className="absolute left-5 top-1/2 -translate-y-1/2 text-gray-400"
+          {/* Search Input */}
+          <div className="relative w-full max-w-115.25">
+            <Image
+              src="/images/search.svg"
+              alt="Search Icon"
+              width={22}
+              height={22}
+              className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-500"
             />
 
             <input
               type="text"
               value={search}
               onChange={(event) => setSearch(event.target.value)}
-              placeholder="What do you want to learn?"
+              placeholder="Course, topic, creator"
               aria-label="Search courses"
-              className="h-14 w-full rounded-full border border-white/10 bg-white px-5 pl-13 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:border-white focus:ring-2 focus:ring-white/20 sm:h-16 sm:text-base"
+              className="h-12 w-full rounded-[22px] border-0 bg-white px-6 pl-14 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-white/30"
             />
           </div>
 
+          {/* Search Button */}
           <button
             type="submit"
-            className="h-14 shrink-0 rounded-full bg-black px-8 text-sm font-medium text-white transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] sm:h-16 sm:px-10 sm:text-base"
+            className="ml-1 h-11 w-24 shrink-0 rounded-3xl bg-[#D4FB20] px-6 py-3 text-sm font-medium text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] "
           >
             Search
           </button>
