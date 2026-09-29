@@ -18,10 +18,10 @@ export default function Hero() {
 
   return (
     <section className="flex min-h-[calc(100vh-70px)] lg:min-h-[calc(100vh-140px)] items-start lg:items-center justify-center">
-      <div className="mx-auto flex w-full max-w-225 flex-col items-center text-center gap-y-5 p-4 sm:p-0">
+      <div className="mx-auto flex w-full flex-col items-center text-center gap-y-5 p-4 sm:p-0">
         {/* Main Heading */}
         <h1
-          className={`max-w-300 text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]`}
+          className={`mt-16 max-w-220 text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]`}
         >
           Get Access to Hundreds Courses Available
         </h1>
@@ -64,6 +64,21 @@ export default function Hero() {
             Search
           </button>
         </form>
+        <div className="mt-10 relative">
+          <Image
+            src="/images/ellipse.svg"
+            alt="Ellipse"
+            width={1000}
+            height={1000}
+            className="w-full max-w-250 object-contain"
+          />
+          <Image
+            src="/images/man.svg"
+            alt="Man"
+            width={1000}
+            height={1000}
+            className="w-full max-w-160 max-h-100 lg:max-h-130 object-contain absolute bottom-0 left-1/2 -translate-x-1/2 ml-10" />
+        </div>
       </div>
     </section>
   );
