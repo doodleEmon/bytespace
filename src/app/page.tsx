@@ -1,5 +1,6 @@
 import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/shared/Navbar";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,17 +12,24 @@ export default function Home() {
         bg-size-[110px_105px]
       "
     >
-      <div className="mx-auto w-full max-w-350 px-0 sm:px-8 lg:px-12">
+      <div className="mx-auto w-full px-0 sm:px-8 lg:px-12">
         {/* Navbar */}
         <div className="mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-12">
           <Navbar />
         </div>
 
         {/* Hero */}
-        <section>
-          <div className="mx-auto w-full max-w-350 px-0 sm:px-8 lg:px-12">
+        <section className="relative">
+          <div className="mx-auto w-full max-w-350 px-0 sm:px-8 lg:px-12 relative">
             <Hero />
           </div>
+          {/* <Image
+            src="/images/3dOrnament.svg"
+            alt="3D Ornament"
+            width={1000}
+            height={1000}
+            className="absolute bottom-0 -translate-x-1/2 translate-y-1/2 z-50"
+          /> */}
         </section>
       </div>
     </main>
