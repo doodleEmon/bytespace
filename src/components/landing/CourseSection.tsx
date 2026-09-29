@@ -159,7 +159,7 @@ export default function CourseSection() {
                         Discover Your Passion, <br /> Build Your Skills
                     </h2>
 
-                    <p className={`mt-5 text-sm leading-6 font-light text-[#82868E]`}>
+                    <p className="mt-5 text-sm leading-6 font-light text-[#82868E]">
                         At Bytespace Courses, we bring you closer to life-changing
                         knowledge. Explore a variety of courses across different fields,
                         from technology to the arts, and make a difference in your career

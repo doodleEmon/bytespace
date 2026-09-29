@@ -1,4 +1,5 @@
 import CompanyLogos from "@/components/landing/CompanyLogos";
+import CourseCategories from "@/components/landing/CourseCategories";
 import CourseSection from "@/components/landing/CourseSection";
 import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/shared/Navbar";
@@ -39,6 +40,9 @@ export default function Home() {
 
         {/* Courses */}
         <CourseSection />
+
+        {/* Course Categories */}
+        <CourseCategories />
       </div>
     </main>
   );
