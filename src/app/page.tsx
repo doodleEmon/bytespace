@@ -1,3 +1,4 @@
+import CompanyLogos from "@/components/landing/CompanyLogos";
 import Hero from "@/components/landing/Hero";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
@@ -31,6 +32,8 @@ export default function Home() {
             className="absolute bottom-0 z-50 w-full object-contain"
           />
         </section>
+
+        <CompanyLogos />
       </div>
     </main>
   );
