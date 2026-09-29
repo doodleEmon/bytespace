@@ -27,7 +27,7 @@ export default function CompanyLogos() {
     return (
         <section className="h-50.5 bg-[#F5F5F6]">
             <div className="mx-auto flex h-full w-full max-w-350 items-center justify-center px-5 sm:px-8 lg:px-12">
-                <div className="flex items-center justify-center gap-8 lg:gap-15">
+                <div className="flex items-center justify-center gap-8 lg:gap-12 flex-wrap">
                     {companies.map((company) => (
                         <CompanyLogo
                             key={company.name}
