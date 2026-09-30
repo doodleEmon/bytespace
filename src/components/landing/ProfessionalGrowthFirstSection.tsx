@@ -1,69 +1,109 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function ProfessionalGrowthFirstSection() {
     return (
-        <div className="relative flex flex-col-reverse items-start justify-center gap-8 md:flex-row md:gap-20 md:pl-28 pt-24">
+        <div className="relative grid min-h-155 items-center gap-12 py-10 sm:py-14 lg:grid-cols-2 lg:gap-10 lg:py-0">
+            {/* Decorative glow */}
             <div
-                className="absolute -top-150 -left-60 size-284 pointer-events-none opacity-100 z-0"
+                aria-hidden="true"
+                className="pointer-events-none absolute -left-70 -top-55 z-0 h-140 w-140 rounded-full"
                 style={{
                     background:
                         "radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.092) 53%, rgba(203, 252, 1, 0.024) 75%, rgba(203, 252, 1, 0) 100%)",
                 }}
             />
-            {/* Left Content - set to w-full md:w-1/2 */}
-            <div className="z-10 w-full md:w-1/2 md:mt-24">
-                <h1 className="text-2xl font-semibold leading-tight tracking-tight lg:text-[40px]">
-                    Your Path to Professional <br /> Growth Starts Here!
-                </h1>
-                <p className="mt-8 text-sm font-light leading-6 text-gray-600 lg:pr-12">
-                    Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
+
+            {/* =========================
+          LEFT CONTENT
+      ========================== */}
+            <div className="relative z-10 max-w-140">
+                <h2 className="text-3xl font-semibold leading-[120%] tracking-[-0.5px] text-[#16181D] sm:text-4xl lg:text-[40px]">
+                    Your Path to Professional
+                    <br className="hidden sm:block" /> Growth Starts Here!
+                </h2>
+
+                <p className="mt-6 max-w-135 text-sm font-light leading-7 text-gray-600 sm:mt-8 sm:text-base">
+                    Explore our curated selection of courses tailored to enhance your
+                    capabilities and accelerate your career journey. Whether you are
+                    looking to sharpen specific skills, gain industry expertise, or
+                    embark on a new career path entirely, we have the resources you
+                    need.
                 </p>
-                <div className="mt-8 flex items-center gap-8 lg:gap-12">
+
+                {/* Statistics */}
+                <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6 sm:mt-10 sm:gap-x-12">
                     <div>
-                        <h1 className="text-2xl font-medium text-persian-blue-800 lg:text-[32px]">12K</h1>
-                        <span className="text-sm font-light text-gray-600">Students</span>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            12K
+                        </p>
+                        <span className="text-sm font-light text-gray-600">
+                            Students
+                        </span>
                     </div>
+
                     <div>
-                        <h1 className="text-2xl font-medium text-persian-blue-800 lg:text-[32px]">70+</h1>
-                        <span className="text-sm font-light text-gray-600">Courses</span>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            70+
+                        </p>
+                        <span className="text-sm font-light text-gray-600">
+                            Courses
+                        </span>
                     </div>
+
                     <div>
-                        <h1 className="text-2xl font-medium text-persian-blue-800 lg:text-[32px]">16</h1>
-                        <span className="text-sm font-light text-gray-600">Creators</span>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            16
+                        </p>
+                        <span className="text-sm font-light text-gray-600">
+                            Creators
+                        </span>
                     </div>
                 </div>
             </div>
 
-            {/* Right Image Wrapper - set to w-full md:w-1/2 */}
-            <div className="relative h-150 w-full md:w-1/2">
+            {/* =========================
+          RIGHT VISUAL
+      ========================== */}
+            <div className="relative mx-auto h-110 w-full max-w-140 sm:h-130 lg:h-145 lg:ml-5">
+                {/* Course card */}
                 <Image
                     src="/images/professionalGrowth/professional-growth-course-card.svg"
-                    alt="Professional Growth Course Card"
+                    alt="Course card"
                     width={320}
                     height={360}
-                    className="absolute -left-10 top-0 object-cover"
+                    className="absolute left-[2%] top-[2%] z-10 h-auto w-48 sm:w-64 lg:w-72"
                 />
-                <Image
-                    src="/images/professionalGrowth/professional-growth-man.svg"
-                    alt="Man"
-                    fill
-                    className="absolute bottom-0 left-0 object-cover z-10 zoom-100"
-                />
+
+                {/* Person */}
+                <div className="absolute inset-x-0 bottom-0 z-20 h-[90%]">
+                    <Image
+                        src="/images/professionalGrowth/professional-growth-man.svg"
+                        alt="Professional learning"
+                        fill
+                        className="object-contain object-bottom"
+                        sizes="(max-width: 640px) 90vw, (max-width: 1024px) 50vw, 560px"
+                    />
+                </div>
+
+                {/* Learning progress */}
                 <Image
                     src="/images/professionalGrowth/professional-growth-learning-progress.svg"
-                    alt="Learning Progress"
+                    alt="Learning progress"
                     width={200}
                     height={120}
-                    className="absolute top-42 right-12 object-cover z-20"
+                    className="absolute right-[4%] top-[34%] z-30 h-auto w-32.5 sm:w-42.5 lg:w-50"
                 />
+
+                {/* Decorative mask */}
                 <Image
                     src="/images/professionalGrowth/professional-growth-export-mask.svg"
-                    alt="Export Mask"
+                    alt=""
+                    aria-hidden="true"
                     width={200}
                     height={200}
-                    className="absolute right-1 top-7 object-cover z-30"
+                    className="absolute right-[-2%] top-[8%] z-40 h-auto w-32.5 sm:w-41.25 lg:w-50"
                 />
             </div>
         </div>
-    )
+    );
 }
