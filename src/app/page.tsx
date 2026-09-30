@@ -5,7 +5,7 @@ import Hero from "@/components/landing/Hero";
 import JoinByteSpace from "@/components/landing/JoinByteSpace";
 import ProfessionalGrowth from "@/components/landing/ProfessionalGrowth";
 import Testimonials from "@/components/landing/Testimonials";
-import Navbar from "@/components/shared/Navbar";
+import Navbar from "@/components/common/Navbar";
 import Image from "next/image";
 
 export default function Home() {

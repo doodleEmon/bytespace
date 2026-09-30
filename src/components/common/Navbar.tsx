@@ -1,9 +1,9 @@
 "use client";
 
-import { clashDisplay } from "@/app/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Logo from "../shared/Logo";
 
 const navItems = [
   { label: "Home", href: "/" },
@@ -18,26 +18,7 @@ export default function Navbar() {
     <header className="relative w-full lg:pt-2">
       <nav className="flex h-18 lg:h-20 items-center justify-between">
         {/* Left — Logo + Name */}
-        <Link
-          href="/"
-          className="flex items-end gap-1"
-          onClick={() => setIsMenuOpen(false)}
-        >
-          <Image
-            src="/images/vector.svg"
-            alt="ByteSpace logo"
-            width={31}
-            height={31}
-            priority
-            className="size-6 lg:size-7"
-          />
-
-          <span
-            className={`h-7 text-base font-bold text-white md:text-xl ${clashDisplay.className} -mb-2 md:-mb-1`}
-          >
-            ByteSpace
-          </span>
-        </Link>
+        <Logo onClick={() => setIsMenuOpen(false)} className="text-white" />
 
         {/* Middle — Desktop Navigation */}
         <div className="hidden items-center gap-8 md:flex lg:gap-8 mt-2">
@@ -99,21 +80,18 @@ export default function Navbar() {
 
           <div className="flex w-5 flex-col gap-1.5">
             <span
-              className={`h-0.5 w-full bg-white transition-transform duration-200 ${
-                isMenuOpen ? "translate-y-2 rotate-45" : ""
-              }`}
+              className={`h-0.5 w-full bg-white transition-transform duration-200 ${isMenuOpen ? "translate-y-2 rotate-45" : ""
+                }`}
             />
 
             <span
-              className={`h-0.5 w-full bg-white transition-opacity duration-200 ${
-                isMenuOpen ? "opacity-0" : "opacity-100"
-              }`}
+              className={`h-0.5 w-full bg-white transition-opacity duration-200 ${isMenuOpen ? "opacity-0" : "opacity-100"
+                }`}
             />
 
             <span
-              className={`h-0.5 w-full bg-white transition-transform duration-200 ${
-                isMenuOpen ? "-translate-y-2 -rotate-45" : ""
-              }`}
+              className={`h-0.5 w-full bg-white transition-transform duration-200 ${isMenuOpen ? "-translate-y-2 -rotate-45" : ""
+                }`}
             />
           </div>
         </button>
@@ -121,11 +99,10 @@ export default function Navbar() {
 
       {/* Mobile Navigation */}
       <div
-        className={`absolute left-0 right-0 top-full z-50 overflow-hidden transition-all duration-300 md:hidden ${
-          isMenuOpen
+        className={`absolute left-0 right-0 top-full z-50 overflow-hidden transition-all duration-300 md:hidden ${isMenuOpen
             ? "pointer-events-auto max-h-96 opacity-100"
             : "pointer-events-none max-h-0 opacity-0"
-        }`}
+          }`}
       >
         <div className="border border-[#D4FB20] bg-persian-blue-800/95 p-3 backdrop-blur-md sm:px-8 rounded-xl">
           {/* Navigation Links */}
