@@ -2,14 +2,23 @@ import Image from "next/image";
 
 export default function ProfessionalGrowthFirstSection() {
     return (
-        <div className="relative grid min-h-155 items-center gap-12 py-10 sm:py-14 lg:grid-cols-2 lg:gap-10 lg:py-0">
+        <div className="relative grid min-h-155 items-center gap-12 py-10 sm:py-14 lg:grid-cols-2 lg:gap-10 lg:pt-16">
             {/* Decorative glow */}
             <div
                 aria-hidden="true"
-                className="pointer-events-none absolute -left-70 -top-55 z-0 h-140 w-140 rounded-full"
+                className="pointer-events-none absolute left-0 -top-55 z-0 h-140 w-140 rounded-full"
                 style={{
                     background:
-                        "radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.092) 53%, rgba(203, 252, 1, 0.024) 75%, rgba(203, 252, 1, 0) 100%)",
+                        "radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.2) 53%, rgba(203, 252, 1, 0.1) 75%, rgba(203, 252, 1, 0) 100%)",
+                }}
+            />
+
+            <div
+                aria-hidden="true"
+                className="pointer-events-none absolute top-45.75 -left-128.75 z-0 h-284.25 w-284.25 rounded-full"
+                style={{
+                    background:
+                        "radial-gradient(50% 50% at 50% 50%, rgba(0, 59, 226, 0.16) 0%, rgba(0, 59, 226, 0.0368) 53%, rgba(0, 59, 226, 0.0096) 75%, rgba(0, 59, 226, 0) 100%)",
                 }}
             />
 
@@ -64,7 +73,8 @@ export default function ProfessionalGrowthFirstSection() {
             {/* =========================
           RIGHT VISUAL
       ========================== */}
-            <div className="relative mx-auto h-110 w-full max-w-140 sm:h-130 lg:h-145 lg:ml-5">
+            {/* <div className="relative mx-auto h-110 w-full max-w-140 sm:h-130 lg:h-145 lg:ml-5"> */}
+            <div className="relative mx-auto h-110 w-full max-w-140 scale-[1.2] sm:h-130 lg:h-145 lg:ml-5 mt-20">
                 {/* Course card */}
                 <Image
                     src="/images/professionalGrowth/professional-growth-course-card.svg"

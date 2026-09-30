@@ -2,6 +2,7 @@ import CompanyLogos from "@/components/landing/CompanyLogos";
 import CourseCategories from "@/components/landing/CourseCategories";
 import CourseSection from "@/components/landing/CourseSection";
 import Hero from "@/components/landing/Hero";
+import JoinByteSpace from "@/components/landing/JoinByteSpace";
 import ProfessionalGrowth from "@/components/landing/ProfessionalGrowth";
 import Navbar from "@/components/shared/Navbar";
 import Image from "next/image";
@@ -47,6 +48,9 @@ export default function Home() {
 
         {/* Professional Growth */}
         <ProfessionalGrowth />
+
+        {/* Join Byte Space */}
+        <JoinByteSpace />
       </div>
     </main>
   );
