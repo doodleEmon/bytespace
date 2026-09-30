@@ -1,9 +1,8 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
 
 export default function ProfessionalGrowthFirstSection() {
     return (
-        <div className="relative flex flex-col items-center justify-center gap-8 md:flex-row md:gap-20 md:pl-16">
+        <div className="relative flex flex-col-reverse items-start justify-center gap-8 md:flex-row md:gap-20 md:pl-28">
             <div
                 className="absolute -top-150 -left-60 size-284 pointer-events-none opacity-100 z-0"
                 style={{
@@ -12,7 +11,7 @@ export default function ProfessionalGrowthFirstSection() {
                 }}
             />
             {/* Left Content - set to w-full md:w-1/2 */}
-            <div className="z-10 w-full md:w-1/2">
+            <div className="z-10 w-full md:w-1/2 md:mt-24">
                 <h1 className="text-2xl font-semibold leading-tight tracking-tight lg:text-[40px]">
                     Your Path to Professional <br /> Growth Starts Here!
                 </h1>
@@ -36,33 +35,33 @@ export default function ProfessionalGrowthFirstSection() {
             </div>
 
             {/* Right Image Wrapper - set to w-full md:w-1/2 */}
-            <div className="relative h-120 w-full md:w-1/2">
+            <div className="relative h-150 w-full md:w-1/2">
                 <Image
                     src="/images/professionalGrowth/professional-growth-course-card.svg"
                     alt="Professional Growth Course Card"
                     width={320}
                     height={360}
-                    className="absolute -left-8 top-0 object-cover"
+                    className="absolute -left-10 top-0 object-cover"
                 />
                 <Image
-                    src="/images/man.svg"
+                    src="/images/professionalGrowth/professional-growth-man.svg"
                     alt="Man"
                     fill
-                    className="absolute bottom-0 right-0 object-cover"
+                    className="absolute bottom-0 left-0 object-cover z-10 zoom-100"
                 />
                 <Image
                     src="/images/professionalGrowth/professional-growth-learning-progress.svg"
                     alt="Learning Progress"
                     width={200}
                     height={120}
-                    className="absolute bottom-42 right-8 object-cover"
+                    className="absolute top-42 right-12 object-cover z-20"
                 />
                 <Image
                     src="/images/professionalGrowth/professional-growth-export-mask.svg"
                     alt="Export Mask"
                     width={200}
                     height={200}
-                    className="absolute -right-3.5 top-14 object-cover"
+                    className="absolute right-1 top-7 object-cover z-30"
                 />
             </div>
         </div>

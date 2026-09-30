@@ -1,17 +1,48 @@
 import Image from 'next/image'
-import React from 'react'
 
 export default function ProfessionalGrowthSecondSection() {
     return (
-        <div className="relative flex flex-col items-center justify-center gap-8 md:flex-row md:gap-20 md:pl-16">
+        <div className="relative flex flex-col items-center justify-center gap-8 md:flex-row md:gap-20 pt-20 overflow-hidden">
             <div
-                className="absolute -top-150 -left-60 size-284 pointer-events-none opacity-100 z-0"
+                className="absolute -bottom-100 -left-90 size-200 pointer-events-none opacity-100 z-0"
                 style={{
                     background:
                         "radial-gradient(50% 50% at 50% 50%, rgba(203, 252, 1, 0.4) 0%, rgba(203, 252, 1, 0.092) 53%, rgba(203, 252, 1, 0.024) 75%, rgba(203, 252, 1, 0) 100%)",
                 }}
             />
             {/* Left Content - set to w-full md:w-1/2 */}
+            <div className="relative h-160 w-full md:w-1/2 pl-50 border">
+                <Image
+                    src="/images/manageCourse/women.svg"
+                    alt="Woman"
+                    fill
+                    className="border border-red-500 absolute bottom-0 right-0 object-contain z-20"
+                />
+                <Image
+                    src="/images/manageCourse/manage-course-total-revenue.svg"
+                    alt="Manage Course Total Revenue"
+                    width={220}
+                    height={110}
+                    className="absolute -left-20 top-0 object-cover "
+                />
+                {/* <Image
+                    src="/images/professionalGrowth/professional-growth-learning-progress.svg"
+                    alt="Learning Progress"
+                    width={200}
+                    height={120}
+                    className="absolute bottom-42 right-8 object-cover"
+                />
+                <Image
+                    src="/images/professionalGrowth/professional-growth-export-mask.svg"
+                    alt="Export Mask"
+                    width={200}
+                    height={200}
+                    className="absolute -right-3.5 top-14 object-cover"
+                /> */}
+            </div>
+
+            {/* Right Image Wrapper - set to w-full md:w-1/2 */}
+
             <div className="z-10 w-full md:w-1/2">
                 <h1 className="text-2xl font-semibold leading-tight tracking-tight lg:text-[40px]">
                     Your Path to Professional <br /> Growth Starts Here!
@@ -33,37 +64,6 @@ export default function ProfessionalGrowthSecondSection() {
                         <span className="text-sm font-light text-gray-600">Creators</span>
                     </div>
                 </div>
-            </div>
-
-            {/* Right Image Wrapper - set to w-full md:w-1/2 */}
-            <div className="relative h-120 w-full md:w-1/2">
-                <Image
-                    src="/images/professionalGrowth/professional-growth-course-card.svg"
-                    alt="Professional Growth Course Card"
-                    width={320}
-                    height={360}
-                    className="absolute -left-8 top-0 object-cover"
-                />
-                <Image
-                    src="/images/man.svg"
-                    alt="Man"
-                    fill
-                    className="absolute bottom-0 right-0 object-cover"
-                />
-                <Image
-                    src="/images/professionalGrowth/professional-growth-learning-progress.svg"
-                    alt="Learning Progress"
-                    width={200}
-                    height={120}
-                    className="absolute bottom-42 right-8 object-cover"
-                />
-                <Image
-                    src="/images/professionalGrowth/professional-growth-export-mask.svg"
-                    alt="Export Mask"
-                    width={200}
-                    height={200}
-                    className="absolute -right-3.5 top-14 object-cover"
-                />
             </div>
         </div>
     )
