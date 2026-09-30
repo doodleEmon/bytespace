@@ -19,7 +19,7 @@ interface CourseCardProps {
 
 export default function CourseCard({ course }: CourseCardProps) {
     return (
-        <article className="w-full rounded-3xl border border-[#E5E5E7] hover:border-[#D4FB20] bg-white p-3.5">
+        <article className="w-full rounded-3xl border border-[#E5E5E7] transition-all duration-200 hover:border-[#D4FB20] hover:shadow-xl bg-white p-3.5">
             {/* Course Image */}
             <div className="relative h-45 w-full overflow-hidden rounded-xl">
                 <Image
