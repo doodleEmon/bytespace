@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function ProfessionalGrowthFirstSection() {
     return (
-        <div className="relative flex flex-col-reverse items-start justify-center gap-8 md:flex-row md:gap-20 md:pl-28">
+        <div className="relative flex flex-col-reverse items-start justify-center gap-8 md:flex-row md:gap-20 md:pl-28 pt-24">
             <div
                 className="absolute -top-150 -left-60 size-284 pointer-events-none opacity-100 z-0"
                 style={{
