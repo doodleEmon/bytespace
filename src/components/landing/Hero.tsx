@@ -15,10 +15,42 @@ export default function Hero() {
 
   return (
     <section className="flex min-h-[calc(100svh-70px)] w-full items-stretch justify-center lg:min-h-[calc(100vh-70px)]">
-      <div className="flex min-h-[calc(100svh-70px)] w-full flex-col lg:min-h-[calc(100vh-70px)]">
-        {/* <div className="flex flex-1 w-full flex-col items-center justify-center gap-5 px-4 sm:px-6 lg:mb-5"> */}
+      <div className="flex min-h-[calc(100svh-70px)] w-full flex-col lg:min-h-[calc(100vh-70px)] relative overflow-hidden">
+
+        {/* Cones section (absolute) */}
+        {/* Left lime twist */}
+        <div className="absolute left-[-5%] md:left-[-5%] lg:left-[-4.5%] top-[13%] md:top-[0%] lg:top-[10%] z-0">
+          <Image src="/images/hero/cones/hero-lime-twist.svg" alt="Cones" width={1000} height={1000} className="max-h-30 md:max-h-50 lg:max-h-90 max-w-30 md:max-w-50 lg:max-w-90 " />
+        </div>
+
+        {/* Left small white twist */}
+        <div className="absolute left-[10%] md:left-[16%] lg:left-[12%] top-[32%] md:top-[31%] lg:top-[42%] z-10">
+          <Image src="/images/hero/cones/hero-small-white-twist.svg" alt="Cones" width={1000} height={1000} className="max-h-20 md:max-h-30 lg:max-h-42 max-w-20 md:max-w-30 lg:max-w-42 " />
+        </div>
+
+        {/* Left white ellipse */}
+        <div className="absolute left-[-15%] md:left-[-5%] lg:left-[0.5%] bottom-[22%] md:bottom-[30%] lg:bottom-[0%] z-10">
+          <Image src="/images/hero/cones/hero-white-ellipse.svg" alt="Cones" width={1000} height={1000} className="max-h-40 md:max-h-50 lg:max-h-76 max-w-40 md:max-w-50 lg:max-w-76" />
+        </div>
+
+        {/* Right lime tank */}
+        <div className="absolute right-[-5%] md:right-[-5%] lg:right-[-5%] top-[5%] md:top-[5%] lg:top-[10%] z-10">
+          <Image src="/images/hero/cones/hero-lime-tank.svg" alt="Cones" width={1000} height={1000} className="max-h-28 md:max-h-55 lg:max-h-82 max-w-28 md:max-w-55 lg:max-w-82" />
+        </div>
+
+        {/* Right white pyramid */}
+        <div className="absolute right-[15%] md:right-[10%] lg:right-[10%] bottom-[60%] md:bottom-[52%] lg:bottom-[40%] z-10">
+          <Image src="/images/hero/cones/hero-white-pyramid.svg" alt="Cones" width={1000} height={1000} className="max-h-20 md:max-h-35 lg:max-h-42 max-w-20 md:max-w-35 lg:max-w-42" />
+        </div>
+
+        {/* Right white twist */}
+        <div className="absolute right-[-8%] md:right-[-5%] lg:right-[0%] bottom-[26%] md:bottom-[28%] lg:bottom-[0%] z-10">
+          <Image src="/images/hero/cones/hero-white-twist.svg" alt="Cones" width={1000} height={1000} className="max-h-35 md:max-h-50 lg:max-h-80 max-w-35 md:max-w-50 lg:max-w-80" />
+        </div>
+
+
         {/* TOP */}
-        <div className="flex flex-1 h-fit w-full shrink-0 items-center justify-center px-4 sm:px-6 lg:mb-5 lg:px-8 lg:pt-16 lg:pb-10">
+        <div className="flex flex-1 h-fit w-full shrink-0 items-center justify-center px-4 sm:px-6 lg:mb-5 lg:px-8 lg:pt-16 lg:pb-10 z-10">
           <div className="mx-auto w-full max-w-250 text-center">
             <h1 className="text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]">
               Get Access to Hundreds Courses Available
@@ -32,7 +64,7 @@ export default function Hero() {
         </div>
 
         {/* MIDDLE / SEARCH */}
-        <div className="flex w-full items-center justify-center px-4 sm:px-6 lg:mb-5 lg:pb-10">
+        <div className="flex w-full items-center justify-center px-4 sm:px-6 lg:mb-5 lg:pb-10 z-10">
           <form
             onSubmit={handleSearch}
             className="flex w-full max-w-115.25 flex-col items-center justify-center gap-2 md:max-w-none md:flex-row"
@@ -68,7 +100,7 @@ export default function Hero() {
 
         {/* BOTTOM / ELLIPSE */}
         <div className="flex max-lg:flex-1 w-full items-end justify-center px-4 sm:px-6">
-          <div className="relative w-full max-w-250 translate-y-px border">
+          <div className="relative w-full max-w-250 translate-y-px">
             <Image
               src="/images/hero/ellipse.svg"
               alt="Ellipse"
