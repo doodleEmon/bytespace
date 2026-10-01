@@ -8,98 +8,123 @@ export default function Hero() {
 
   const handleSearch = (event: React.SubmitEvent<HTMLFormElement>) => {
     event.preventDefault();
-
     const query = search.trim();
-
     if (!query) return;
-
     console.log("Searching for:", query);
   };
 
   return (
-    <section className="flex min-h-[calc(100vh-70px)] lg:min-h-[calc(100vh-140px)] items-start lg:items-center justify-center">
-      <div className="mx-auto flex w-full flex-col items-center text-center gap-y-5 p-4 sm:p-0">
-        {/* Main Heading */}
-        <h1
-          className={`mt-8 lg:mt-16 max-w-220 text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]`}
-        >
-          Get Access to Hundreds Courses Available
-        </h1>
+    <section className="flex min-h-[calc(100svh-70px)] w-full items-stretch justify-center lg:min-h-[calc(100vh-70px)]">
+      <div className="flex min-h-[calc(100svh-70px)] w-full flex-col lg:min-h-[calc(100vh-70px)]">
+        {/* <div className="flex flex-1 w-full flex-col items-center justify-center gap-5 px-4 sm:px-6 lg:mb-5"> */}
+        {/* TOP */}
+        <div className="flex flex-1 h-fit w-full shrink-0 items-center justify-center px-4 sm:px-6 lg:mb-5 lg:px-8 lg:pt-16 lg:pb-10">
+          <div className="mx-auto w-full max-w-250 text-center">
+            <h1 className="text-3xl font-semibold leading-[1.2] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[65px]">
+              Get Access to Hundreds Courses Available
+            </h1>
 
-        {/* Description */}
-        <p className="mt-2 max-w-210 text-sm leading-6 text-white/75 sm:text-sm sm:leading-7 lg:text-sm">
-          Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
-        </p>
-
-        {/* Search */}
-        <form
-          onSubmit={handleSearch}
-          className="mt-8 flex w-full items-center justify-center gap-2"
-        >
-          {/* Search Input */}
-          <div className="relative w-full max-w-115.25">
-            <Image
-              src="/images/search.svg"
-              alt="Search Icon"
-              width={22}
-              height={22}
-              className="absolute left-6 top-1/2 -translate-y-1/2 text-gray-500"
-            />
-
-            <input
-              type="text"
-              value={search}
-              onChange={(event) => setSearch(event.target.value)}
-              placeholder="Course, topic, creator"
-              aria-label="Search courses"
-              className="h-12 w-full rounded-[22px] border-0 bg-white px-6 pl-14 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-white/30"
-            />
+            <p className="mx-auto mt-5 max-w-200 text-sm leading-6 text-white/75 sm:text-sm sm:leading-7 lg:text-sm pt-3">
+              Unlock your creativity, gain valuable knowledge, and grow your
+              business with our wide range of courses.
+            </p>
           </div>
+        </div>
 
-          {/* Search Button */}
-          <button
-            type="submit"
-            className="ml-1 h-11 w-24 shrink-0 rounded-3xl bg-[#D4FB20] px-6 py-3 text-sm font-medium text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] "
+        {/* MIDDLE / SEARCH */}
+        <div className="flex w-full items-center justify-center px-4 sm:px-6 lg:mb-5 lg:pb-10">
+          <form
+            onSubmit={handleSearch}
+            className="flex w-full max-w-115.25 flex-col items-center justify-center gap-2 md:max-w-none md:flex-row"
           >
-            Search
-          </button>
-        </form>
-        <div className="mt-10 relative">
-          <Image
-            src="/images/ellipse.svg"
-            alt="Ellipse"
-            width={1000}
-            height={1000}
-            className="w-full max-w-250 object-contain"
-          />
-          <Image
-            src="/images/man.svg"
-            alt="Man"
-            width={630}
-            height={590}
-            className="w-full max-w-157.5 max-h-147.5 object-contain absolute bottom-0 left-1/2 -translate-x-1/2 ml-10"
-          />
-          <Image
-            src="/images/uiux.svg"
-            alt="UI/UX Designer"
-            width={180}
-            height={65}
-            className="w-full max-w-45 max-h-16 lg:max-h-130 object-contain absolute left-[22%] top-[13%]"
-          />
-          <Image
-            src="/images/happyStudents.svg"
-            alt="Happy Students"
-            width={230}
-            height={100}
-            className="w-full max-w-57.5 max-h-25 lg:max-h-130 object-contain absolute left-[15%] bottom-[14%]"
-          />
-          <Image
-            src="/images/learningProgress.svg"
-            alt="Learning Progress"
-            width={200}
-            height={75}
-            className="w-full max-w-50 max-h-18.75 lg:max-h-130 object-contain absolute right-[20%] top-[15%]"
-          />
+            <div className="relative w-full max-w-115.25">
+              <Image
+                src="/images/hero/search.svg"
+                alt="Search Icon"
+                width={22}
+                height={22}
+                className="absolute left-6 top-1/2 -translate-y-1/2"
+              />
+
+              <input
+                type="text"
+                value={search}
+                onChange={(event) => setSearch(event.target.value)}
+                placeholder="Course, topic, creator"
+                aria-label="Search courses"
+                className="h-12 w-full rounded-[22px] border border-[#D4D6DA] bg-white px-6 pl-14 text-sm text-gray-900 outline-none placeholder:text-gray-400 focus:border-[#D4FB20] sm:text-sm"
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="ml-1 h-11 w-full shrink-0 rounded-3xl bg-[#D4FB20] px-6 py-3 text-sm font-medium text-black transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98] md:w-24"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+        {/* </div> */}
+
+        {/* BOTTOM / ELLIPSE */}
+        <div className="flex max-lg:flex-1 w-full items-end justify-center px-4 sm:px-6">
+          <div className="relative w-full max-w-250 translate-y-px border">
+            <Image
+              src="/images/hero/ellipse.svg"
+              alt="Ellipse"
+              width={1000}
+              height={1000}
+              className="h-auto w-full object-contain z-0"
+            />
+
+            {/* Overlay layer — man + cards */}
+            <div className="absolute inset-0 z-10">
+              {/* Man */}
+              <div className="absolute inset-0 flex items-end justify-center -mr-20">
+                <Image
+                  src="/images/hero/man.svg"
+                  alt="Man"
+                  width={1000}
+                  height={1000}
+                  className="max-h-245 max-w-155"
+                />
+              </div>
+
+              {/* Card 1 — top left */}
+              <div className="absolute left-5 lg:left-[22.5%] md:top-[13%]">
+                <Image
+                  src="/images/hero/uiux.svg"
+                  alt="UI/UX Design"
+                  width={1000}
+                  height={1000}
+                  className="max-h-30 max-w-45"
+                />
+              </div>
+
+              {/* Card 2 — top right */}
+              <div className="absolute md:right-[20%] md:top-[15%]">
+                <Image
+                  src="/images/hero/learningProgress.svg"
+                  alt="Learning Progress"
+                  width={1000}
+                  height={1000}
+                  className="max-h-30 max-w-50"
+                />
+              </div>
+
+              {/* Card 3 — bottom left */}
+              <div className="absolute md:bottom-[15%] md:left-[15%]">
+                <Image
+                  src="/images/hero/happyStudents.svg"
+                  alt="Happy Students"
+                  width={1000}
+                  height={1000}
+                  className="max-h-50 max-w-60"
+                />
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </section>
