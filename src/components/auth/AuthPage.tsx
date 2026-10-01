@@ -8,61 +8,22 @@ interface AuthPageProps {
 export default function AuthPage({ mode }: AuthPageProps) {
     return (
         <section className="min-h-screen px-4 md:px-8 lg:px-16 pb-5 md:pb-10 lg:pb-16">
-            <div className="w-full flex flex-col lg:flex-row gap-5 md:gap-16 lg:gap-28 lg:px-12">
+            <div className="w-full flex flex-col lg:flex-row gap-5 md:gap-10 lg:gap-14 lg:px-12">
                 {/* Left visual area */}
-                <div className="w-1/2">
+                <div className="w-full lg:w-1/2 overflow-hidden">
                     <div className="text-white">
-                        <p className="text-[18px] font-semibold">Sign in with ease</p>
-                        <p className="text-sm leading-6 text-gray-200 mt-4">Experience a seamless and efficient sign-in process that <br /> grants you instant access to a world of knowledge.</p>
+                        <p className="text-[18px] font-semibold">{mode === "login" ? "Sign in with ease" : "Sign up and come in"}</p>
+
+                        <p className="mt-4 max-w-120 text-sm leading-6 text-gray-200 sm:text-[15px] font-thin">
+                            {mode === "login" ? "Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge." : "The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost."}
+                        </p>
                     </div>
-                    <div className="relative h-145 w-full overflow-hidden mt-20">
-                        <Image
-                            src="/images/auth/auth-course-2.svg"
-                            alt="auth-course-2"
-                            height={384}
-                            width={373}
-                            className="z-0 absolute top-[13%] left-0"
-                        />
-                        <Image
-                            src="/images/auth/auth-course-1.svg"
-                            alt="auth-course-1"
-                            height={384}
-                            width={373}
-                            className="z-10 absolute top-0 right-0"
-                        />
-                        <Image
-                            src="/images/auth/auth-ellipse.svg"
-                            alt="auth-ellipse"
-                            height={146}
-                            width={146}
-                            className="z-10 absolute top-2 left-9"
-                        />
-                        <Image
-                            src="/images/auth/auth-cone.svg"
-                            alt="auth-cone"
-                            height={188}
-                            width={188}
-                            className="z-10 absolute bottom-0 -left-6"
-                        />
-                        <Image
-                            src="/images/auth/auth-students.svg"
-                            alt="auth-students"
-                            height={123}
-                            width={258}
-                            className="z-10 absolute bottom-8 right-0"
-                        />
-                        <Image
-                            src="/images/auth/auth-twist.svg"
-                            alt="auth-twist"
-                            height={175}
-                            width={175}
-                            className="z-20 absolute bottom-24 -right-7"
-                        />
-                    </div>
+
+                    <Image src="/images/auth/auth-whole-image.svg" alt="auth-visual" width={1000} height={1000} className="lg:-ml-6 mt-8 md:mt-12 lg:mt-18" />
                 </div>
 
                 {/* Right form area */}
-                <div className="flex w-1/2 justify-center h-fit">
+                <div className="flex w-full lg:w-1/2 md:justify-stretch lg:justify-center h-fit mt-5 lg:mt-0">
                     <AuthForm mode={mode} />
                 </div>
             </div>

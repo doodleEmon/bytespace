@@ -32,7 +32,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
     };
 
     return (
-        <div className="w-full max-w-130 rounded-3xl bg-white px-7 py-10 shadow-sm sm:px-10 sm:py-12 lg:px-14 lg:py-14">
+        <div className="w-full lg:max-w-130 rounded-3xl bg-white px-7 py-10 shadow-sm sm:px-10 sm:py-12 lg:px-14 lg:py-14">
             {/* Heading */}
             <div>
                 <p className="text-sm font-normal text-persian-blue-800 sm:text-base">
