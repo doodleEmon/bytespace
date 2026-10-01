@@ -72,7 +72,7 @@ export default function CourseCard({ course }: CourseCardProps) {
                 <div className="mt-4 flex items-center justify-between">
                     <div className="flex items-center gap-3">
                         <div className="rounded-3xl bg-[#F5F5F6] px-3 py-1.5 text-[10px] text-[#82868E] flex items-center justify-center gap-x-1">
-                            <Image src="/images/course-level.svg" alt="Course level" width={17} height={18} />
+                            <Image src="/images/hero/course-level.svg" alt="Course level" width={17} height={18} />
                             <span>Beginner</span>
                         </div>
                         {/* {course.students.map((student, index) => (
@@ -90,7 +90,7 @@ export default function CourseCard({ course }: CourseCardProps) {
                             </div>
                         ))} */}
                         <Image
-                            src={"/images/enrolledStudents.svg"}
+                            src={"/images/hero/enrolledStudents.svg"}
                             alt="Enrolled Students"
                             width={110}
                             height={32}

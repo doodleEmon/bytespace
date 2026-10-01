@@ -110,7 +110,7 @@ export default function Footer() {
                                 type="submit"
                                 className="shrink-0 rounded-full bg-[#D4FB20] px-5 py-2 text-base font-light text-black transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] hover:shadow-lg"
                             >
-                                Search
+                                Send
                             </button>
                         </form>
 
