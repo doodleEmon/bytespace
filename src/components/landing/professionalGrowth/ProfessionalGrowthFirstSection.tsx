@@ -1,4 +1,5 @@
 import Image from "next/image";
+import CountUp from "@/components/landing/professionalGrowth/CountUp";
 
 export default function ProfessionalGrowthFirstSection() {
     return (
@@ -40,7 +41,7 @@ export default function ProfessionalGrowthFirstSection() {
                 </p>
 
                 {/* Statistics */}
-                <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6 sm:mt-10 sm:gap-x-12">
+                {/* <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6 sm:mt-10 sm:gap-x-12">
                     <div>
                         <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
                             12K
@@ -66,6 +67,28 @@ export default function ProfessionalGrowthFirstSection() {
                         <span className="text-sm font-light text-gray-600">
                             Creators
                         </span>
+                    </div>
+                </div> */}
+                <div className="mt-8 flex flex-wrap items-start gap-x-8 gap-y-6 sm:mt-10 sm:gap-x-12">
+                    <div>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            <CountUp end={12} suffix="K" />
+                        </p>
+                        <span className="text-sm font-light text-gray-600">Students</span>
+                    </div>
+
+                    <div>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            <CountUp end={70} suffix="+" />
+                        </p>
+                        <span className="text-sm font-light text-gray-600">Courses</span>
+                    </div>
+
+                    <div>
+                        <p className="text-2xl font-medium text-persian-blue-800 sm:text-[32px]">
+                            <CountUp end={16} />
+                        </p>
+                        <span className="text-sm font-light text-gray-600">Creators</span>
                     </div>
                 </div>
             </div>
