@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Right — Desktop Actions */}
         <div className="hidden items-center gap-2 sm:gap-3 md:flex lg:gap-2 mt-2">
           <Link
-            href="/sign-in"
+            href="/login"
             className="px-3 py-2 sm:px-4 text-sm text-gray-300 hover:text-white transition-transform duration-200"
           >
             Sign In
