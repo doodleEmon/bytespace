@@ -86,40 +86,40 @@ export default function Hero() {
                   alt="Man"
                   width={1000}
                   height={1000}
-                  className="max-h-245 max-w-155"
+                  className="max-h-200 md:max-h-245 max-w-100 md:max-w-155"
                 />
               </div>
 
               {/* Card 1 — top left */}
-              <div className="absolute left-5 lg:left-[22.5%] md:top-[13%]">
+              <div className="absolute left-[5%] md:left-[8%] lg:left-[22.5%] top-[-40%] md:top-[-12%] lg:top-[13%]">
                 <Image
                   src="/images/hero/uiux.svg"
                   alt="UI/UX Design"
                   width={1000}
                   height={1000}
-                  className="max-h-30 max-w-45"
+                  className="max-h-10 md:max-h-30 max-w-25 md:max-w-45"
                 />
               </div>
 
               {/* Card 2 — top right */}
-              <div className="absolute md:right-[20%] md:top-[15%]">
+              <div className="absolute right-[5%] md:right-[10%] lg:right-[20%] top-[-50%] md:top-[-10%] lg:top-[15%]">
                 <Image
                   src="/images/hero/learningProgress.svg"
                   alt="Learning Progress"
                   width={1000}
                   height={1000}
-                  className="max-h-30 max-w-50"
+                  className="max-h-10 md:max-h-30 max-w-30 md:max-w-50"
                 />
               </div>
 
               {/* Card 3 — bottom left */}
-              <div className="absolute md:bottom-[15%] md:left-[15%]">
+              <div className="absolute bottom-[8%] md:bottom-[10%] lg:bottom-[15%] left-[0%] md:left-[5%] lg:left-[15%]">
                 <Image
                   src="/images/hero/happyStudents.svg"
                   alt="Happy Students"
                   width={1000}
                   height={1000}
-                  className="max-h-50 max-w-60"
+                  className="max-h-20 md:max-h-50 max-w-35 md:max-w-60"
                 />
               </div>
             </div>
