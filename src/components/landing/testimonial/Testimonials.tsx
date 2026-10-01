@@ -1,4 +1,4 @@
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "@/components/landing/testimonial/TestimonialCard";
 
 interface Testimonial {
     id: number;

@@ -1,5 +1,5 @@
-import ProfessionalGrowthFirstSection from "./ProfessionalGrowthFirstSection";
-import ProfessionalGrowthSecondSection from "./ProfessionalGrowthSecondSection";
+import ProfessionalGrowthFirstSection from "@/components/landing/professionalGrowth/ProfessionalGrowthFirstSection";
+import ProfessionalGrowthSecondSection from "@/components/landing/professionalGrowth/ProfessionalGrowthSecondSection";
 
 export default function ProfessionalGrowth() {
   return (

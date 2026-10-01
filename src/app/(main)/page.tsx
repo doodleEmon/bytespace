@@ -3,8 +3,8 @@ import CourseCategories from "@/components/landing/courseCategory/CourseCategori
 import CourseSection from "@/components/landing/courses/CourseSection";
 import Hero from "@/components/landing/Hero";
 import JoinByteSpace from "@/components/landing/JoinByteSpace";
-import ProfessionalGrowth from "@/components/landing/ProfessionalGrowth";
-import Testimonials from "@/components/landing/Testimonials";
+import ProfessionalGrowth from "@/components/landing/professionalGrowth/ProfessionalGrowth";
+import Testimonials from "@/components/landing/testimonial/Testimonials";
 
 export default function Home() {
   return (
