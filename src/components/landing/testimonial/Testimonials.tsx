@@ -71,7 +71,7 @@ export default function Testimonials() {
                         Discover What Our <br />Community Is Saying
                     </h2>
 
-                    <p className="md:w-1/2 satoshi text-sm font-extralight text-gray-700 leading-6 z-30">
+                    <p className="lg:w-1/2 satoshi text-sm font-extralight text-gray-700 leading-6 z-30">
                         At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators.
                     </p>
                 </div>

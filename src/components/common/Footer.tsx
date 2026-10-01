@@ -165,7 +165,7 @@ export default function Footer() {
                 <div className="mt-16 border-t border-[#D7D8DB] sm:mt-20 lg:mt-32" />
 
                 {/* Bottom footer */}
-                <div className="flex flex-col gap-6 pt-6 pb-10 lg:flex-row lg:items-start lg:justify-between">
+                <div className="flex flex-col gap-6 pt-6 pb-10 md:flex-row lg:items-start md:justify-between">
                     <p className="satoshi text-xs text-[#4B4D52]">
                         &copy; {new Date().getFullYear()} ByteSpace. All rights reserved.
                     </p>
