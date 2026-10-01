@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { SubmitEvent, useState } from "react";
 
@@ -95,7 +96,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
                         placeholder="designer@example.com"
                         autoComplete="email"
                         required
-                        className="mt-2 h-[47px] w-full rounded-[10px] border border-[#E1E2E5] bg-white px-5 text-sm text-[#202124] outline-none transition-colors placeholder:text-[#9699A1] focus:border-[#003BE2]"
+                        className="mt-2 h-[47px] w-full rounded-[10px] border border-[#E1E2E5] bg-white px-5 text-sm text-[#202124] outline-none transition-colors placeholder:text-[#9699A1] focus:border-[#D4FB20]"
                     />
                 </div>
 
@@ -117,7 +118,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
                         placeholder="*********"
                         autoComplete={isRegister ? "new-password" : "current-password"}
                         required
-                        className="mt-2 h-[47px] w-full rounded-[10px] border border-[#E1E2E5] bg-white px-5 text-sm text-[#202124] outline-none transition-colors placeholder:text-[#9699A1] focus:border-[#003BE2]"
+                        className="mt-2 h-[47px] w-full rounded-[10px] border border-[#E1E2E5] bg-white px-5 text-sm text-[#202124] outline-none transition-colors placeholder:text-[#9699A1] focus:border-[#D4FB20]"
                     />
                 </div>
 
@@ -125,7 +126,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
                 <div className="mt-6 flex justify-end">
                     <button
                         type="submit"
-                        className="h-[42px] rounded-full bg-[#C6FF00] px-7 text-sm font-medium text-[#202124] transition-transform duration-200 hover:scale-[1.02] active:scale-[0.98]"
+                        className="rounded-full bg-[#D4FB20] px-5 py-3 text-sm font-medium text-[#202124] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] cursor-pointer hover:shadow-lg"
                     >
                         {isRegister ? "Continue" : "Sign In"}
                     </button>
@@ -134,7 +135,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
                 {/* Social Login - Login only */}
                 {!isRegister && (
                     <>
-                        <div className="my-10 flex items-center gap-3">
+                        <div className="mb-10 mt-16 flex items-center gap-3">
                             <div className="h-px flex-1 bg-[#D9DADD]" />
 
                             <span className="text-sm text-[#9699A1]">or</span>
@@ -146,17 +147,17 @@ export default function AuthForm({ mode }: AuthFormProps) {
                             <button
                                 type="button"
                                 aria-label="Continue with Facebook"
-                                className="flex h-[66px] w-[66px] items-center justify-center rounded-[20px] border border-[#D9DADD] text-2xl font-bold text-[#111]"
+                                className="flex size-16.5 items-center justify-center rounded-[20px] border border-[#D9DADD] text-2xl font-bold text-[#111] cursor-pointer hover:border-[#D4FB20] transition-colors"
                             >
-                                f
+                                <Image src="/images/auth/auth-facebook.svg" alt="Facebook" width={40} height={40} />
                             </button>
 
                             <button
                                 type="button"
                                 aria-label="Continue with Google"
-                                className="flex h-[66px] w-[66px] items-center justify-center rounded-[20px] border border-[#D9DADD] text-2xl font-bold text-[#111]"
+                                className="flex size-16.5 items-center justify-center rounded-[20px] border border-[#D9DADD] text-2xl font-bold text-[#111] cursor-pointer hover:border-[#D4FB20] transition-colors"
                             >
-                                G
+                                <Image src="/images/auth/auth-google.svg" alt="Google" width={40} height={40} />
                             </button>
                         </div>
                     </>
@@ -164,7 +165,7 @@ export default function AuthForm({ mode }: AuthFormProps) {
             </form>
 
             {/* Bottom link */}
-            <div className="mt-14 text-center text-sm text-[#8A8C92]">
+            <div className="mt-16 text-center text-sm text-[#8A8C92]">
                 {isRegister ? (
                     <>
                         Already have an account?{" "}
